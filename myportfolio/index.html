@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/lightstyle.css" />
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+  <div class="mode-container">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="checkbox-label">
+      <i class="fa-solid fa-sun" style="color: #ffca0a;"></i>
+      <i class="fa-solid fa-moon" style="color: #ecdb22;"></i>
+      <span class="ball"></span>
+    </label>
+  </div>
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="assets/images/Ujjwal.jpg" alt="Ujjwal_Pingle" width="80" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ujjwal Pingle">Ujjwal Pingle</h1>
+
+          <p class="title">Cloud Developer</p>
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:pingleujjwalcollege@gmail.com" class="contact-link">pingleujjwalcollege@gmail.com</a>
+            </div>
+          </li>
+
+
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Pune,India</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ujjwal-pingle-730a69246/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/ujjwal_pingle12" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ujjwal_pingle" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+
+
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a third-year CSE student at DIT Pune, 
+            focusing on building efficient and scalable cloud solutions as a Cloud Developer.
+          </p>
+          <p>
+            My technical skills include proficiency in Python, Java, C++, and SQL, along with experience using developer 
+            tools such as VS Code, Eclipse, and Google Cloud Platform. I am also skilled in DevOps tools like 
+            Git, GitHub, Bash scripting, Docker, and Kubernetes for efficient deployment and automation
+          </p>
+
+          <p>
+      
+
+          </p>
+
+
+        </section>
+
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <!-- <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div> -->
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Building Cloud Solutions with DevOps Practices </h4>
+
+                <p class="service-item-text">
+                  I am building cloud solutions using DevOps practices to create scalable and efficient applications. 
+                  This involves fostering collaboration between development and operations teams, automating deployment 
+                  processes, and emphasizing continuous integration and monitoring. By utilizing tools like Docker and 
+                  Kubernetes, I can deliver high-quality solutions quickly while ensuring flexibility and resilience in the 
+                  cloud environment.
+                </p>
+              </div>
+            </li>
+
+
+
+            <li class="service-item">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  Data Structures and Algorithms</h4>
+
+                <p class="service-item-text">
+                  I'm always on a mission to sharpen my problem-solving skills,
+                  with over 100 DSA problems solved on platforms like LeetCode.
+                  My journey into algorithms isn't just about hitting numbers—it's about
+                  embracing challenges and finding elegant solutions. I find joy in the constant improvement and
+                  discovery.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+
+
+      </article>
+
+
+      <!--
+        - #Skills
+      -->
+      <section>
+        <article class="skills" data-page="skills">
+          <header>
+            <h2 class="h2 article-title">Skills</h2>
+          </header>
+
+          <section>
+            <a href="https://skillicons.dev">
+              <img
+                src="https://skillicons.dev/icons?i=aws,azure,gcp,bash,bitbucket,cpp,docker,kubernetes,terraform,jenkins,dynamodb,mysql,gitlab,grafana,cpp,py,java,git,github,vscode,figma&perline=8" />
+            </a>
+          </section>
+        </article>
+      </section>
+
+      <!-- Resume -->
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+        <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+
+        <!-- Experience Section Start -->
+
+        <!-- <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Frontend Developer Intern - Userology
+              </h4>
+
+              <span>April 2024 — May 2024</span>
+            </li> -->
+
+            <!-- <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Indraprastha College for Women, University of Delhi
+              </h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                BSc. Computer Science Honors
+              </p>
+            </li> -->
+
+
+            <!-- <li class="timeline-item">
+              <p class="timeline-text">
+                Developed an advanced Researcher Analytics Platform using TypeScript, Next.js, and React to increase
+                researcher productivity through interactive dashboards that visualize reports from AI-moderated user testing
+                Built a configuration module within the Researcher Platform allowing for AI interviewer personalization
+                Developed and integrated a frontend panel in the UserTesting Platform that visualizes connection health
+                metrics via charts, enhancing the user interface with real-time status updates from the health check API
+            </p>
+            </li>
+
+          </ol>
+        </section> -->
+
+
+        <!-- Experience Section Ends Here -->
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                DR DY PATIL INSTITUTE OF TECHNOLOGY
+              </h4>
+
+              <span>2022 — 2026</span>
+
+              <p class="timeline-text">
+                Bachlor's of Computer Engineering
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Shri Pramod Patil Junior College</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">High School class (XII)</p>
+            </li>
+
+          </ol>
+        </section>
+
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                AWS Cloud Practitioner Essentials
+                <span>Completed: March 2024</span>
+              </h4>
+
+
+              <p class="timeline-text">
+                Gained foundational knowledge of AWS cloud concepts, core services, security, architecture, pricing, and support.
+              </p>
+            </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Getting Started with DevOps on AWS
+                <span>Completed: April 2024</span>
+              </h4>
+
+              <p class="timeline-text">Learned best practices for using AWS tools for DevOps, including continuous integration and deployment.</p>
+            </li>
+
+
+            <li class="timeline-item"></li>
+              <h4 class="h4 timeline-item-title"> Cisco Networking Basics
+                <span>Completed: January 2024</span>
+              </h4>
+
+              <p class="timeline-text">Acquired foundational networking knowledge, including IP addressing, networking protocols, and router configuration.</p>
+            </li>
+
+          </ol>
+        </section>
+      </article>
+
+      <!--
+        - #Projects
+      -->
+
+      <article class="portfolio" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>
+                Select category
+              </div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="CPU-Monitoring-App">
+               <a href="https://github.com/ujjwalpingle/Cloud-Native-CPU-Monitoring-App/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/cpu.jpeg" alt="SoulNect" height="100" width="10" loading="lazy" />
+                </figure>
+
+                <div style="display: flex;">
+                  <h3 class="project-title-ongoing">CPU-Monitoring-App
+                    <span class="ongoingtag">Ongoing</span>
+                  </h3>
+                </div>
+
+                <p class="project-category"></p>
+                <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">Python | Flask | Docker | EC2 </span>
+                <br />
+
+
+                <p class="project-category" style="font-size:14px">
+                  Developed a web application using Flask for real-time system metrics monitoring.
+                  Utilized the Python CPU metrics library to gather detailed CPU and memory usage statistics.
+                  Containerized the application with Docker for consistent deployment across different environments.
+                  Managed the Docker container using Docker Compose for easy orchestration and scalability. </p>
+              </a>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="Pizza Ordering Chatbot">
+              <a href="https://github.com/ujjwalpingle/pizza-ordering-chat-bot" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/amazon-lex.jpg" alt="Chatbot" height="100" width="10" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Chatbot</h3>
+
+                <p class="project-category"></p>
+                <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">Amazon Lex |
+                  AWS Lambda | AWS IAM | Slots</span>
+                <br />
+
+
+                <p class="project-category" style="font-size:14px">
+                  Developed a chatbot using Amazon Lex to automate and streamline the pizza ordering process.
+                  Implemented natural language processing capabilities to enhance customer interaction and facilitate effortless order placement.
+                  Integrated AWS Lambda for backend processing, ensuring efficient handling of user requests and order management.
+                  Utilized AWS IAM to manage secure access, safeguarding user data and maintaining system integrity.
+                </p>
+              </a>
+            </li>
+
+            <!--End For Projects || If wanna add projects further copy above snippets and just add below-->
+            
+          </ul>
+        </section>
+      </article>
+
+    </div>
+
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
