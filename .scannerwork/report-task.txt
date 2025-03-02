@@ -1,0 +1,6 @@
+projectKey=ujjwal-portfolio
+serverUrl=http://localhost:9000
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9000/dashboard?id=ujjwal-portfolio
+ceTaskId=32046d4e-319a-4591-a905-8f00cb14d907
+ceTaskUrl=http://localhost:9000/api/ce/task?id=32046d4e-319a-4591-a905-8f00cb14d907
