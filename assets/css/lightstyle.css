@@ -1,3 +1,40 @@
+.project-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.project-btn.live {
+  background-color: var(--orange-yellow-crayola, #f4b400);
+}
+
+.project-btn.source {
+  background-color: #2b2b2b;
+}
+
+.project-btn.github {
+  background-color: #000;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0.92;
+}
 :root {
     /* gradient */
     --bg-gradient-yellow-1: linear-gradient(
